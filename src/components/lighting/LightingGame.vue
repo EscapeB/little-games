@@ -32,7 +32,6 @@
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import d3 from 'd3';
 import _ from 'lodash';
 
 function initStatus(max: number): boolean[][] {
