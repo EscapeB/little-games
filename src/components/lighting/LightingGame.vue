@@ -66,7 +66,7 @@ export default class LightingGame extends Vue {
         let nums = 0;
         for (var i = 0; i < this.MAX_COUNT; i++) {
             for (var j = 0; j < this.MAX_COUNT; j++) {
-                if (i == x || j == y) {
+                if (Math.sqrt(Math.pow(i - x, 2) + Math.pow(j - y, 2)) <= 1) {
                     newStatus[i][j] = !newStatus[i][j];
                 }
                 if (newStatus[i][j]) {
